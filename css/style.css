@@ -1,0 +1,109 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 20px;
+    border: 1px black solid;
+    background-color: var(--White);
+    width: 380px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    
+}
+.card {
+    box-shadow: 10px 10px 0px 0px #000 
+}
+
+.card .logo {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 340px;
+}
+
+.card .text {
+    margin-top: 16px;
+    width: 340px;
+}
+
+.card .text span {
+    background-color: var(--Yellow);
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.card .text h4 {
+    margin-top: 16px;
+    font-weight: 600;
+}
+.card .text h1 {
+    margin-top: 16px;
+    font-size: 25px;
+    cursor: pointer;
+    color: var(--Black);
+}
+.card .text h1:hover {
+    color: var(--Yellow);
+}
+.card .text p {
+    margin-top: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--Grey);
+}
+.card .footer {
+    margin-top: 16px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card .footer .icon {
+    width: 16%;
+}
+.card .footer .icon img {
+    width: 35px;
+}
+.card .footer p {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--Black);
+}
+@media (max-width: 400px) {
+    .card {
+        width: 330px;
+    }
+    .card .logo {
+        width: 290px;
+    }
+    .card .text {
+        width: 290px;
+    }
+    .card .text h1 {
+        font-size: 22px;
+    }
+    .card .text p {
+        font-size: 14px;
+    }
+    .card .footer {
+        width: 290px;
+    }
+}
